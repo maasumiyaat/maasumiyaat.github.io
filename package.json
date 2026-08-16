@@ -1,7 +1,7 @@
 {
-  "name": "omarfaruk-portfolio",
+  "name": "masum-portfolio",
   "version": "1.0.0",
-  "homepage": "https://omarfaruk-k.github.io",
+  "homepage": "https://maasumiyaat.github.io",
   "type": "module",
   "scripts": {
     "dev": "vite",

@@ -1,7 +1,6 @@
 import { useParams, Link, useNavigate } from 'react-router-dom'
 import { blogPosts, getPostBySlug } from '../data/blog'
-import Nav from '../components/Nav'
-import Footer from '../components/Footer'
+import Layout from '../components/Layout'
 import '../styles/blog.css'
 
 // Renders a single content block
@@ -30,14 +29,12 @@ export default function BlogPost() {
 
   if (!post) {
     return (
-      <>
-        <Nav />
+      <Layout>
         <div style={{ minHeight: '60vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: '1rem' }}>
           <p style={{ fontFamily: 'var(--font-mono)', color: 'var(--muted)' }}>Post not found.</p>
           <Link to="/blog" style={{ fontFamily: 'var(--font-mono)', fontSize: '0.8rem', color: 'var(--accent)' }}>← Back to blog</Link>
         </div>
-        <Footer />
-      </>
+      </Layout>
     )
   }
 
@@ -47,9 +44,7 @@ export default function BlogPost() {
   // const next = idx < blogPosts.length - 1 ? blogPosts[idx + 1] : null
 
   return (
-    <>
-      <Nav />
-
+    <Layout>
       {/* Post hero */}
       <div className="post-hero">
         <div className="container">
@@ -62,12 +57,12 @@ export default function BlogPost() {
           </div>
           <div className="post-meta-row">
             <span className="post-category">{post.category}</span>
-            <span className="post-meta-item">{post.date}</span>
-            <span className="post-meta-item">·</span>
-            <span className="post-meta-item">{post.readTime} read</span>
+            {post.date && <span className="post-meta-item">{post.date}</span>}
+            {post.date && post.readTime && <span className="post-meta-item">·</span>}
+            {post.readTime && <span className="post-meta-item">{post.readTime} read</span>}
           </div>
           <h1 className="post-title">{post.title}</h1>
-          <p className="post-subtitle">{post.subtitle}</p>
+          {post.subtitle && <p className="post-subtitle">{post.subtitle}</p>}
         </div>
       </div>
 
@@ -108,18 +103,17 @@ export default function BlogPost() {
             <div className="author-card">
               <div className="author-avatar">
                 <img
-                  src="/assets/gmmm.png"
-                  alt="Omar Faruk Khan"
-                  onError={e => { e.target.style.display = 'none'; e.target.parentElement.textContent = 'O' }}
+                  src="/assets/avatar.png"
+                  alt="Osman Gani Khan Masum"
+                  onError={e => { e.target.style.display = 'none'; e.target.parentElement.textContent = 'M' }}
                 />
               </div>
               <div className="author-info">
-                <h4>Omar Faruk Khan</h4>
-                <p>Software Engineer · Full Stack &amp; Mobile · Based in Bangladesh. Writing about things I build and learn.</p>
+                <h4>Osman Gani Khan Masum</h4>
+                <p>Backend Engineer · Distributed Systems &amp; Microservices. Writing about things I build and learn.</p>
                 <div className="author-links">
-                  <a className="author-link" href="https://github.com/omarfaruk-k/" target="_blank" rel="noopener">GitHub</a>
-                  <a className="author-link" href="https://dev.to/omarfaruk-k" target="_blank" rel="noopener">dev.to</a>
-                  <a className="author-link" href="https://omarfaruk-k.medium.com/" target="_blank" rel="noopener">Medium</a>
+                  <a className="author-link" href="https://github.com/maasumiyaat" target="_blank" rel="noopener">GitHub</a>
+                  <a className="author-link" href="https://medium.com/@masum26" target="_blank" rel="noopener">Medium</a>
                 </div>
               </div>
             </div>
@@ -145,8 +139,6 @@ export default function BlogPost() {
           </article>
         </div>
       </div>
-
-      <Footer />
-    </>
+    </Layout>
   )
 }

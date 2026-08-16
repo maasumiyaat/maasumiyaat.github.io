@@ -1,41 +1,25 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { ThemeProvider } from './hooks/useTheme'
+import Layout from './components/Layout'
+import Hero from './components/Hero'
 
-// Main portfolio layout
-import ProgressBar from './components/ProgressBar'
-import Nav        from './components/Nav'
-import Hero       from './components/Hero'
-import About      from './components/About'
-import Experience from './components/Experience'
-import Projects   from './components/Projects'
-import Blog       from './components/Blog'
-import Contact    from './components/Contact'
-import Footer     from './components/Footer'
+// Standalone pages
+import AboutPage      from './pages/AboutPage'
+import SkillsPage     from './pages/SkillsPage'
+import ExperiencePage  from './pages/ExperiencePage'
+import EducationPage  from './pages/EducationPage'
+import ProjectsPage   from './pages/ProjectsPage'
+import OpenSourcePage from './pages/OpenSourcePage'
+import RecommendationsPage from './pages/RecommendationsPage'
+import BlogList        from './pages/BlogList'
+import BlogPost        from './pages/BlogPost'
+import ContactPage    from './pages/ContactPage'
 
-// Blog pages
-import BlogList from './pages/BlogList'
-import BlogPost from './pages/BlogPost'
-
-function Portfolio() {
+function Home() {
   return (
-    <>
-      <ProgressBar />
-      <Nav />
-      <main>
-        <Hero />
-        <hr className="divider" />
-        <About />
-        <hr className="divider" />
-        <Experience />
-        <hr className="divider" />
-        <Projects />
-        <hr className="divider" />
-        <Blog />
-        <hr className="divider" />
-        <Contact />
-      </main>
-      <Footer />
-    </>
+    <Layout>
+      <Hero />
+    </Layout>
   )
 }
 
@@ -44,9 +28,17 @@ export default function App() {
     <ThemeProvider>
       <BrowserRouter>
         <Routes>
-          <Route path="/"           element={<Portfolio />} />
-          <Route path="/blog"       element={<BlogList />} />
-          <Route path="/blog/:slug" element={<BlogPost />} />
+          <Route path="/"            element={<Home />} />
+          <Route path="/about"       element={<AboutPage />} />
+          <Route path="/skills"      element={<SkillsPage />} />
+          <Route path="/experience"  element={<ExperiencePage />} />
+          <Route path="/education"   element={<EducationPage />} />
+          <Route path="/projects"    element={<ProjectsPage />} />
+          <Route path="/open-source" element={<OpenSourcePage />} />
+          <Route path="/recommendations" element={<RecommendationsPage />} />
+          <Route path="/blog"        element={<BlogList />} />
+          <Route path="/blog/:slug"  element={<BlogPost />} />
+          <Route path="/contact"     element={<ContactPage />} />
         </Routes>
       </BrowserRouter>
     </ThemeProvider>

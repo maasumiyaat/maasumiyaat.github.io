@@ -10,7 +10,7 @@ export default function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault(); setStatus('sending')
     try {
-      const res = await fetch('https://formspree.io/f/xreargno', {
+      const res = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
         method: 'POST', body: new FormData(e.target), headers: { Accept: 'application/json' }
       })
       if (res.ok) { setStatus('success'); e.target.reset() } else throw new Error()
@@ -28,12 +28,12 @@ export default function Contact() {
               Have a project in mind, want to collaborate, or just want to say hi?
               I'm always open to interesting conversations and opportunities.
             </p>
-            <a className="contact-email" href="mailto:omarfaruk.k.cs@gmail.com">
+            <a className="contact-email" href="mailto:osmanmasum.cs@gmail.com">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
                 <polyline points="22,6 12,13 2,6"/>
               </svg>
-              omarfaruk.k.cs@gmail.com
+              osmanmasum.cs@gmail.com
             </a>
             <div className="about-merged-links">
               {socialLinks.filter(l => ['github','linkedin'].includes(l.icon)).map(link => (

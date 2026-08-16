@@ -2,70 +2,114 @@ export const skillGroups = [
   {
     group: 'Languages',
     skills: [
-      { name: 'JavaScript', icon: 'devicon-javascript-plain' },
-      { name: 'Python',     icon: 'devicon-python-plain' },
-      { name: 'Java',       icon: 'devicon-java-plain' },
-      { name: 'C++',        icon: 'devicon-cplusplus-plain' },
-      { name: 'Dart',       icon: 'devicon-dart-plain' },
-    ]
-  },
-  {
-    group: 'Frontend',
-    skills: [
-      { name: 'React.js',   icon: 'devicon-react-original' },
-      { name: 'Next.js',    icon: 'devicon-nextjs-plain' },
-      { name: 'Tailwind',   icon: 'devicon-tailwindcss-plain' },
-      { name: 'Bootstrap',  icon: 'devicon-bootstrap-plain' },
-      { name: 'Sass',       icon: 'devicon-sass-original' },
-    ]
-  },
-  {
-    group: 'Backend',
-    skills: [
+      { name: 'Go',         icon: 'devicon-go-plain' },
       { name: 'Node.js',    icon: 'devicon-nodejs-plain' },
-      { name: 'Express',    icon: 'devicon-express-original' },
-      { name: 'Django',     icon: 'devicon-django-plain' },
-      { name: 'Flask',      icon: 'devicon-flask-original' },
-      { name: 'Socket.io',  icon: 'devicon-socketio-original' },
+      { name: 'TypeScript', icon: 'devicon-typescript-plain' },
+      { name: 'Python',     icon: 'devicon-python-plain' },
     ]
   },
   {
-    group: 'Mobile',
+    group: 'AI & ML',
     skills: [
-      { name: 'Flutter',      icon: 'devicon-flutter-plain' },
-      { name: 'React Native', icon: 'devicon-react-original' },
-      { name: 'Android',      icon: 'devicon-android-plain' },
+      { name: 'bert-base-cased' },
+      { name: 'falcon-7b-instruct' },
+      { name: 'all-MiniLM-L6-v2' },
+      { name: 'RoBERTa' },
+      { name: 'Stable Diffusion' },
     ]
   },
   {
-    group: 'Database',
+    group: 'Frameworks',
     skills: [
-      { name: 'MySQL',      icon: 'devicon-mysql-plain' },
+      { name: 'Gin' },
+      { name: 'Beego' },
+      { name: 'NestJS',     icon: 'devicon-nestjs-plain' },
+      { name: 'Express.js', icon: 'devicon-express-original' },
+      { name: 'Testify' },
+      { name: 'Artillery' },
+    ]
+  },
+  {
+    group: 'Databases & Search',
+    skills: [
       { name: 'PostgreSQL', icon: 'devicon-postgresql-plain' },
+      { name: 'MySQL',      icon: 'devicon-mysql-plain' },
       { name: 'MongoDB',    icon: 'devicon-mongodb-plain' },
-      { name: 'Firebase',   icon: 'devicon-firebase-plain' },
-      { name: 'Supabase',   icon: 'devicon-supabase-plain' },
+      { name: 'TiDB' },
+      { name: 'ClickHouse' },
+      { name: 'InfluxDB' },
+      { name: 'Redis',      icon: 'devicon-redis-plain' },
+      { name: 'LMDB' },
+      { name: 'TypeSense' },
+      { name: 'Pinecone' },
+      { name: 'SQLite',     icon: 'devicon-sqlite-plain' },
     ]
   },
   {
-    group: 'DevOps & Cloud',
+    group: 'Cloud',
     skills: [
-      { name: 'Docker',   icon: 'devicon-docker-plain' },
-      { name: 'GCP',      icon: 'devicon-googlecloud-plain' },
-      { name: 'Railway',  icon: 'devicon-railway-plain' },
-      { name: 'Git',      icon: 'devicon-git-plain' },
-      { name: 'GitHub',   icon: 'devicon-github-original' },
+      { name: 'AWS',           icon: 'devicon-amazonwebservices-plain' },
+      { name: 'GCP',           icon: 'devicon-googlecloud-plain' },
+      { name: 'Linode' },
+      { name: 'Digital Ocean', icon: 'devicon-digitalocean-plain' },
     ]
   },
   {
-    group: 'Tools',
+    group: 'Containers & Orchestration',
     skills: [
-      { name: 'VS Code',       icon: 'devicon-vscode-plain' },
-      { name: 'Android Studio',icon: 'devicon-androidstudio-plain' },
-      { name: 'Postman',       icon: 'devicon-postman-plain' },
-      { name: 'Figma',         icon: 'devicon-figma-plain' },
-      { name: 'Cloudinary',    icon: 'devicon-cloudinary-plain' },
-      { name: 'WordPress',     icon: 'devicon-wordpress-plain' },
+      { name: 'Kubernetes',   icon: 'devicon-kubernetes-plain' },
+      { name: 'Docker',       icon: 'devicon-docker-plain' },
+      { name: 'Docker Swarm' },
+      { name: 'Helm' },
+      { name: 'Terraform',    icon: 'devicon-terraform-plain' },
+      { name: 'Ansible',      icon: 'devicon-ansible-plain' },
+    ]
+  },
+  {
+    group: 'DevOps & Monitoring',
+    skills: [
+      { name: 'Kafka',           icon: 'devicon-apachekafka-original' },
+      { name: 'Apache Airflow' },
+      { name: 'RabbitMQ',        icon: 'devicon-rabbitmq-original' },
+      { name: 'OpenTelemetry' },
+      { name: 'LGTM' },
+      { name: 'SigNoz' },
+      { name: 'Jenkins',         icon: 'devicon-jenkins-line' },
+      { name: 'Sentry' },
+      { name: 'Nginx',           icon: 'devicon-nginx-original' },
+      { name: 'PM2' },
+      { name: 'Temporal' },
+    ]
+  },
+  {
+    group: 'APIs & Protocols',
+    skills: [
+      { name: 'REST' },
+      { name: 'gRPC' },
+      { name: 'API Gateway' },
+      { name: 'Payment Gateway' },
+    ]
+  },
+  {
+    group: 'Architecture',
+    skills: [
+      { name: 'Microservices' },
+      { name: 'Event-Driven Architecture' },
+      { name: 'SOA' },
+      { name: 'TDD' },
+    ]
+  },
+  {
+    group: 'Workflow',
+    skills: [
+      { name: 'Git', icon: 'devicon-git-plain' },
+      { name: 'Agile' },
+      { name: 'Scrum' },
+      { name: 'Jira',   icon: 'devicon-jira-plain' },
+      { name: 'Trello', icon: 'devicon-trello-plain' },
+      { name: 'Faktory' },
+      { name: 'RiverQueue' },
+      { name: 'Cron' },
     ]
   },
 ]
