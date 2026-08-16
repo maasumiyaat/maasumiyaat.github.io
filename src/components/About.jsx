@@ -11,14 +11,13 @@ export default function About() {
           <div className="section-tag">About</div>
           <h2 className="section-title">Osman Gani<br /><em>Khan</em> Masum</h2>
           <p className="about-merged-bio">
-            Experienced Backend Engineer with 5+ years of expertise in engineering robust and scalable
+            Experienced Backend Engineer with 7+ years of expertise in engineering robust and scalable
             solutions. Proficient in communication protocols, web servers, database engineering, proxies,
             web framework runtimes, and message formats. Skilled in agile methodologies and cross-functional
             collaboration, delivering high-quality software solutions.
           </p>
           <p className="about-merged-bio">
-            You can reach me at <a href="mailto:osmanmasum.cs@gmail.com" style={{ color: 'var(--accent)' }}>osmanmasum.cs@gmail.com</a>,
-            or find more at <a href="https://masum-osman.github.io/" target="_blank" rel="noopener" style={{ color: 'var(--accent)' }}>masum-osman.github.io</a>.
+            You can reach me at <a href="mailto:osmanmasum.cs@gmail.com" style={{ color: 'var(--accent)' }}>osmanmasum.cs@gmail.com</a>.
           </p>
         </div>
 
