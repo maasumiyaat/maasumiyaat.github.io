@@ -4,7 +4,7 @@ import { blogPosts } from '../data/blog'
 import Layout from '../components/Layout'
 import '../styles/blog.css'
 
-const FILTERS = ['All', 'Architecture', 'AI/ML', 'Backend', 'Frontend', 'Mobile', 'Flutter', 'DevOps']
+const FILTERS = ['All', 'Architecture', 'AI/ML', 'Backend', 'Frontend', 'Mobile', 'Flutter', 'DevOps', 'Hardware']
 
 export default function BlogList() {
   const [active, setActive] = useState('All')
@@ -57,7 +57,7 @@ export default function BlogList() {
                   {featured.date && <><span>·</span><span>{featured.date}</span></>}
                 </div>
                 <h2 className="blog-title">{featured.title}</h2>
-                <p className="blog-excerpt">{featured.excerpt}</p>
+                {featured.excerpt && <p className="blog-excerpt">{featured.excerpt}</p>}
                 <span className="blog-readmore">Read article →</span>
               </div>
             </Link>
@@ -79,7 +79,7 @@ export default function BlogList() {
                     {post.date && <><span>·</span><span>{post.date}</span></>}
                   </div>
                   <h3 className="blog-title">{post.title}</h3>
-                  <p className="blog-excerpt">{post.excerpt}</p>
+                  {post.excerpt && <p className="blog-excerpt">{post.excerpt}</p>}
                   <span className="blog-readmore">Read →</span>
                 </Link>
               ) : (
@@ -99,12 +99,12 @@ export default function BlogList() {
                         <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/>
                         <polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>
                       </svg>
-                      Medium
+                      {post.platform}
                     </span>
                   </div>
                   <h3 className="blog-title">{post.title}</h3>
-                  <p className="blog-excerpt">{post.excerpt}</p>
-                  <span className="blog-readmore">Read on Medium →</span>
+                  {post.excerpt && <p className="blog-excerpt">{post.excerpt}</p>}
+                  <span className="blog-readmore">Read on {post.platform} →</span>
                 </a>
               )
             ))}
