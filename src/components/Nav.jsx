@@ -26,7 +26,7 @@ export default function Nav() {
     <>
       <nav>
         <NavLink to="/" end className="nav-logo" onClick={handleLogoClick}>
-          maasumiyaat
+          masum-osman
         </NavLink>
 
         <ul className="nav-links">

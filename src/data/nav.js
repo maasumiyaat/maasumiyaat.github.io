@@ -11,8 +11,11 @@ export const navLinks = [
 ]
 
 export const socialLinks = [
-  { label: 'GitHub',   href: 'https://github.com/maasumiyaat',            icon: 'github' },
-  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/masumosman/',   icon: 'linkedin' },
-  { label: 'Email',    href: 'mailto:osmanmasum.cs@gmail.com',            icon: 'email' },
-  { label: 'Medium',   href: 'https://medium.com/@masum26',               icon: 'medium' },
+  { label: 'GitHub',        href: 'https://github.com/Masum-Osman/masum-osman.github.io',      icon: 'github' },
+  { label: 'X',             href: 'https://twitter.com/masum_osman',                            icon: 'twitter' },
+  { label: 'LinkedIn',      href: 'https://www.linkedin.com/in/masumosman/',                     icon: 'linkedin' },
+  { label: 'dev.to',        href: 'https://dev.to/masumosman',                                   icon: 'devto' },
+  { label: 'Email',         href: 'mailto:osmanmasum.cs@gmail.com',                              icon: 'email' },
+  { label: 'Stack Overflow', href: 'https://stackoverflow.com/users/7086610/osman-gani-khan-masum', icon: 'stackoverflow' },
+  { label: 'Medium',        href: 'https://masum26.medium.com/',                                 icon: 'medium' },
 ]
