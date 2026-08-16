@@ -18,7 +18,7 @@ export default function Hero() {
             <div className="hero-avatar-ring" />
             <img
               className="hero-avatar"
-              src="/assets/avatar.png"
+              src="/assets/avatar.jpg"
               alt="Osman Gani Khan Masum"
               onError={e => { e.target.style.display='none'; e.target.nextSibling.style.display='flex' }}
             />
