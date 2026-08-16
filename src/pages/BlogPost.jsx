@@ -1,6 +1,7 @@
 import { useParams, Link, useNavigate } from 'react-router-dom'
 import { blogPosts, getPostBySlug } from '../data/blog'
 import Layout from '../components/Layout'
+import { useSEO } from '../hooks/useSEO'
 import '../styles/blog.css'
 
 // Renders a single content block
@@ -26,6 +27,11 @@ export default function BlogPost() {
   const { slug } = useParams()
   const navigate = useNavigate()
   const post = getPostBySlug(slug)
+
+  useSEO({
+    title: post ? `${post.title} — Osman Gani Khan Masum` : 'Post Not Found — Osman Gani Khan Masum',
+    description: post?.excerpt || post?.title,
+  })
 
   if (!post) {
     return (

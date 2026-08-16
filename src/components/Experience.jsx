@@ -60,7 +60,7 @@ export default function Experience() {
       <div className="container">
         <div className="section-header reveal" ref={hRef}>
           <div className="section-tag">Experience</div>
-          <h2 className="section-title">Where I've worked</h2>
+          <h1 className="section-title">Where I've worked</h1>
           <p className="section-desc">Roles and projects that shaped how I build software.</p>
         </div>
         <div className="timeline">

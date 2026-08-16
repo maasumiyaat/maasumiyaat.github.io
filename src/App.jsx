@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { ThemeProvider } from './hooks/useTheme'
 import Layout from './components/Layout'
 import Hero from './components/Hero'
+import { useSEO } from './hooks/useSEO'
 
 // Standalone pages
 import AboutPage      from './pages/AboutPage'
@@ -16,6 +17,10 @@ import BlogPost        from './pages/BlogPost'
 import ContactPage    from './pages/ContactPage'
 
 function Home() {
+  useSEO({
+    title: 'Osman Gani Khan Masum — Backend Engineer | Distributed Systems & Microservices',
+    description: 'Osman Gani Khan Masum (Masum Osman) is a backend engineer with 7+ years building distributed systems, microservices, and backend architecture in Go, Node.js, TypeScript, and Python across logistics, EdTech, and e-commerce.',
+  })
   return (
     <Layout>
       <Hero />

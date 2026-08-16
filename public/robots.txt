@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://maasumiyaat.github.io/sitemap.xml

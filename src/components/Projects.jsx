@@ -30,7 +30,7 @@ export default function Projects() {
       <div className="container">
         <div className="section-header reveal" ref={hRef}>
           <div className="section-tag">Projects</div>
-          <h2 className="section-title">Things I've built</h2>
+          <h1 className="section-title">Things I've built</h1>
           <p className="section-desc">A chronological look at projects, big and small.</p>
         </div>
         <div className="projects-grid">

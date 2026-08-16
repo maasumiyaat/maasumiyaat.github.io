@@ -9,7 +9,7 @@ export default function About() {
       <div className="container">
         <div className="about-solo reveal" ref={r1}>
           <div className="section-tag">About</div>
-          <h2 className="section-title">Osman Gani<br /><em>Khan</em> Masum</h2>
+          <h1 className="section-title">Osman Gani<br /><em>Khan</em> Masum</h1>
           <p className="about-merged-bio">
             This is me, I'm a software engineer with 7+ years of professional experience designing and
             building the systems that keep products running — from API design and database engineering to

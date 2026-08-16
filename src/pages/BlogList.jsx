@@ -2,11 +2,16 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { blogPosts } from '../data/blog'
 import Layout from '../components/Layout'
+import { useSEO } from '../hooks/useSEO'
 import '../styles/blog.css'
 
 const FILTERS = ['All', 'Architecture', 'AI/ML', 'Backend', 'Frontend', 'Mobile', 'Flutter', 'DevOps', 'Hardware']
 
 export default function BlogList() {
+  useSEO({
+    title: 'Blog — Osman Gani Khan Masum',
+    description: 'Writing by Osman Gani Khan Masum (Masum Osman) on distributed systems, Go concurrency, networking, and AI/ML — published on Medium and GitBook.',
+  })
   const [active, setActive] = useState('All')
   const featured = blogPosts.find(p => p.featured)
   const filtered = blogPosts.filter(p =>

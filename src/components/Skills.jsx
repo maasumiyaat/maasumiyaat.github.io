@@ -29,7 +29,7 @@ export default function Skills() {
       <div className="container">
         <div className="section-header reveal" ref={hRef}>
           <div className="section-tag">Skills</div>
-          <h2 className="section-title">What I work with</h2>
+          <h1 className="section-title">What I work with</h1>
           <p className="section-desc">Languages, frameworks, and tools I use to ship software.</p>
         </div>
         <SkillGroupList groups={skillGroups} />

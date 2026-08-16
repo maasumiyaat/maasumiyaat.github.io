@@ -53,7 +53,7 @@ export default function Recommendations() {
       <div className="container">
         <div className="section-header reveal" ref={hRef}>
           <div className="section-tag">Recommendations</div>
-          <h2 className="section-title">What people say</h2>
+          <h1 className="section-title">What people say</h1>
           <p className="section-desc">Notes from people I've worked with — grouped by how we worked together.</p>
         </div>
         {recommendationGroups.map(group => <RecommendationGroup key={group.id} group={group} />)}

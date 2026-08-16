@@ -23,7 +23,7 @@ export default function Contact() {
         <div className="contact-wrap">
           <div className="reveal" ref={r1}>
             <div className="section-tag">Contact</div>
-            <h2 className="section-title">Let's work<br /><em>together</em></h2>
+            <h1 className="section-title">Let's work<br /><em>together</em></h1>
             <p style={{color:'var(--muted)',lineHeight:1.8,marginBottom:'1rem'}}>
               Have a project in mind, want to collaborate, or just want to say hi?
               I'm always open to interesting conversations and opportunities.

@@ -16,7 +16,7 @@ export default function Education() {
       <div className="container">
         <div className="section-header reveal" ref={hRef}>
           <div className="section-tag">Education</div>
-          <h2 className="section-title">Academic background</h2>
+          <h1 className="section-title">Academic background</h1>
           <p className="section-desc">Formal education and the credentials built on top of it.</p>
         </div>
         <div className="timeline">

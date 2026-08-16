@@ -52,7 +52,7 @@ export default function OpenSource() {
       <div className="container">
         <div className="section-header reveal" ref={hRef}>
           <div className="section-tag">Open Source</div>
-          <h2 className="section-title">Open Source</h2>
+          <h1 className="section-title">Open Source</h1>
           <p className="section-desc">Things I read, things I've built, and fixes I've sent to projects I don't own.</p>
         </div>
         {openSourceGroups.map(group => <OpenSourceGroup key={group.id} group={group} />)}
