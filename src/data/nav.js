@@ -11,8 +11,8 @@ export const navLinks = [
 ]
 
 export const socialLinks = [
-  { label: 'GitHub',        href: 'https://github.com/Masum-Osman/masum-osman.github.io',      icon: 'github' },
-  { label: 'X',             href: 'https://twitter.com/masum_osman',                            icon: 'twitter' },
+  { label: 'GitHub',        href: 'https://github.com/maasumiyaat',                              icon: 'github' },
+  { label: 'X',             href: 'https://twitter.com/masum_osman',                             icon: 'twitter' },
   { label: 'LinkedIn',      href: 'https://www.linkedin.com/in/masumosman/',                     icon: 'linkedin' },
   { label: 'dev.to',        href: 'https://dev.to/masumosman',                                   icon: 'devto' },
   { label: 'Email',         href: 'mailto:osmanmasum.cs@gmail.com',                              icon: 'email' },

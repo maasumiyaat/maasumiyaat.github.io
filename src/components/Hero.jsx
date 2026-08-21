@@ -28,7 +28,7 @@ export default function Hero() {
 
           {/* Name — accent colored, smaller */}
           <h1 className="hero-name">Osman Gani Khan Masum</h1>
-          <p className="hero-bio">Backend Engineer · Distributed Systems &amp; Microservices</p>
+          <p className="hero-bio">Backend Engineer · Systems, Infrastructure &amp; Scale</p>
 
           {/* Social icons */}
           <div className="hero-social-row">
