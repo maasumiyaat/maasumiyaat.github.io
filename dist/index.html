@@ -24,6 +24,10 @@
   <meta name="twitter:site" content="@masum_osman" />
 
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
+  <link rel="icon" href="/favicon-16.png" type="image/png" sizes="16x16" />
+  <link rel="alternate icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=JetBrains+Mono:wght@300;400;500;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
@@ -56,7 +60,18 @@
   var path = new URLSearchParams(window.location.search).get('path');
   if (path) window.history.replaceState(null, '', path);
 </script>
-  <script type="module" crossorigin src="/assets/index-hwM8p4mS.js"></script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7YSTCE9Y49"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    // send_page_view disabled here; useSEO.js sends one page_view per
+    // route change (including the first), so client-side navigation is tracked.
+    gtag('config', 'G-7YSTCE9Y49', { send_page_view: false });
+  </script>
+  <script type="module" crossorigin src="/assets/index-OE7WeLs8.js"></script>
   <link rel="stylesheet" crossorigin href="/assets/index-Do5Ju5ob.css">
 </head>
 <body>

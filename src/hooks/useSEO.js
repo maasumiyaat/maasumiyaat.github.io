@@ -38,5 +38,13 @@ export function useSEO({ title, description }) {
     setMeta('name', 'twitter:title', title)
     setMeta('name', 'twitter:description', description)
     setCanonical(`${SITE_URL}${pathname}`)
+
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', 'page_view', {
+        page_title: title,
+        page_location: window.location.href,
+        page_path: pathname,
+      })
+    }
   }, [title, description, pathname])
 }
