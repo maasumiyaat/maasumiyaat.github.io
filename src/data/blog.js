@@ -6,6 +6,24 @@
 // ============================================================
 
 export const blogPosts = [
+   {
+    id: 'no-reply@',
+    slug: 'no-reply@',
+    title: 'What Actually Happens If You Reply to no-reply@? Does no-reply@ Actually Have an Inbox?',
+    subtitle: '',
+    excerpt: 'A technical look at why transactional email comes from an address nobody is listening to.',
+    category: 'Architecture',
+    date: '',
+    readTime: '',
+    tags: ['SMTP', 'DKIM', 'System Internals', 'MX Record'],
+    featured: false,
+    local: false,
+    platform: 'Medium',
+    externalLinks: [
+      { label: 'Read on Medium', href: 'https://medium.com/@masum26/what-actually-happens-if-you-reply-to-no-reply-does-no-reply-actually-have-an-inbox-593f14bd14ab?sk=d1da761a5a47261c34065f51065830c0' },
+    ],
+    content: [],
+  },
   {
     id: 'saga-vs-2pc',
     slug: 'saga-vs-2pc',
